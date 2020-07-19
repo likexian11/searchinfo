@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    druid:
+      url: jdbc:mysql://192.168.0.108:3306/select_phone?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      username: root
+      password: 123456
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      test-on-borrow: true
+      # MySQL 8.x: com.mysql.cj.jdbc.Driver  url加上时区&serverTimezone=UTC
+      driver-class-name: com.mysql.jdbc.Driver
+server:
+  port: 8080
+
+mybatis:
+  type-aliases-package: com.likexian.phone.searchinfo.entity
+  mapper-locations: classpath:mapper/*.xml
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.likexian.phone.searchinfo.mapper.UserPhoneMapper">
+  <resultMap id="BaseResultMap" type="com.likexian.phone.searchinfo.entity.UserPhone">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+  </resultMap>
+
+  <update id="truncateTable">
+    truncate table user_phone;
+  </update>
+
+</mapper>
