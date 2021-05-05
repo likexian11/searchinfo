@@ -1,9 +1,9 @@
 spring:
   datasource:
     druid:
-      url: jdbc:mysql://192.168.0.108:3306/select_phone?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+      url: jdbc:mysql://172.18.104.210:3306/select_phone?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
       username: root
-      password: 123456
+      password: hrj123.
       initial-size: 1
       min-idle: 1
       max-active: 20
